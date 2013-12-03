@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YAOS Updater</string>
+    <string name="info_label">Information</string>
+    <string name="rom_to_install">ROM to install:</string>
+    <string name="patch_to_install">Patch:</string>
+    <string name="gapps_to_install">Google Apps:</string>
+    <string name="others_to_install">Others:</string>
+    <string name="other_options">Other options:</string>
+    <string name="do_wipe">Wipe data (delete system data)</string>
+    <string name="do_backup">Backup current system</string>
+    <string name="backup_name">Backup name</string>
+    <string name="updates">Updates</string>
+    <string name="patches">Patches</string>
+    <string name="gapps">Google Apps</string>
+    <string name="others">Patches</string>
+    <string name="install">Install</string>
+    <string name="downloading">Downloading: </string>
+    <string name="zero_percent">0%</string>
+    <string name="already_downloading">You are already downloading an update, please wait until the download ends.</string>
+    <string name="found_files">Found files:</string>
+    <string name="add_as">Add as:</string>
+    <string name="add">Add</string>
+    <string name="add_to_install_plot">Add to installation plot</string>
+    <string name="nothing">Nothing</string>
+    <string name="clear">Clear</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="patch">Patch</string>
+	<string name="other">Other</string>
+	<string name="delete_instructions">To delete items, select them in the list and then click on \"Delete\" again. If you want to cancel, don\'t select any items and click on \"Accept\".</string>
+	<string name="delete_message">Files succesfully deleted</string>
+	<string name="accept">Accept</string>
+	<string name="current_folder">Current foldet: </string>
+	<string name="create_folder">Create folder</string>
+	<string name="create">Create</string>
+	<string name="cling_continue">Continue</string>
+</resources>

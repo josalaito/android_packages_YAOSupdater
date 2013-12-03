@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_above="@+id/button_container">
+	    <TextView
+	        android:id="@+id/listTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/found_files"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <ListView
+	        android:id="@+id/install_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginBottom="30dip"
+	        android:layout_marginTop="25dip"
+	        android:choiceMode="singleChoice">
+	    </ListView>
+	</LinearLayout>
+    <LinearLayout android:id="@+id/button_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
+        <Button
+	        android:id="@+id/addTo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/add" 
+	        android:layout_weight="0.5"/>
+	    <Button
+	        android:id="@+id/delete"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/delete" 
+	        android:layout_weight="0.5"/>
+	</LinearLayout>
+</RelativeLayout>

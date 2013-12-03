@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView android:id="@+id/clingBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/yaos1"
+            android:scaleType="fitXY"/>
+    <org.arasthel.yaos.ui.ClingCanvas 
+    	android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+	    <TextView android:id="@+id/clingTitleText" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/ClingTitleText"
+	        android:layout_marginTop="40dip"
+	        android:layout_marginLeft="60dip"
+	        android:layout_marginRight="60dip"
+	        />
+	    <TextView android:id="@+id/clingText" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/ClingText"
+	        android:maxWidth="720dip"
+	        android:layout_marginLeft="60dip"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="10dip"
+	        android:layout_marginRight="60dip"
+	        android:layout_below="@+id/clingTitleText"
+	        />
+	    <ImageView 
+	        android:id="@+id/yaosIconCling"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/yaos_icon"
+	        android:onClick="exit"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="40dip"
+	        android:layout_marginBottom="40dip"/>
+	    <Button android:id="@+id/clingContinue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginLeft="60dip"
+	        android:layout_below="@+id/clingText"
+	        style="@style/ClingButton"
+	        android:text="@string/cling_continue"
+	        android:onClick="next"/>
+	</org.arasthel.yaos.ui.ClingCanvas>
+</FrameLayout>

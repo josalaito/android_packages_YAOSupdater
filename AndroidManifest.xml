@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.arasthel.yaos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:icon="@drawable/yaos_icon"
+        android:label="@string/app_name"
+        android:name=".app.YAOS" >
+        <activity
+            android:name=".ui.Principal"
+            android:label="@string/app_name"
+            android:configChanges="screenSize|orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Preferences"
+            android:label="Ajustes">
+            <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <activity android:name=".ui.Cling"
+            android:label="Cling"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <service android:name=".services.DownloadService">
+            <intent-filter>
+                <action android:name="org.arasthel.yaos.CANCEL_DOWNLOAD"/>
+            </intent-filter>
+        </service>
+        <service android:name=".services.UpdateService"
+            android:process=":backUpdateProcess">
+        </service>
+        <receiver android:name=".receivers.StartAlarmManagerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="YAOS.AUTOUPDATE"/>
+                <action android:name="YAOS.START_AUTOUPDATE" />
+                <action android:name="YAOS.CANCEL_AUTOUPDATE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

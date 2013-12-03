@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<ViewSwitcher 
+		    android:id="@+id/switcher"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal"
+		    android:id="@+id/container">
+		    
+			<fragment class="org.arasthel.yaos.ui.Lista"
+		        	android:id="@+id/update_list_fragment"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:filterTouchesWhenObscured="true" />
+			<SlidingDrawer 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:handle="@+id/handle"
+			    android:content="@+id/update_info_fragment">
+				<TextView android:id="@+id/handle"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/more_info"
+				    android:gravity="center"
+				    android:padding="10dip"
+				    android:background="@android:drawable/title_bar" />			    
+			    <fragment class="org.arasthel.yaos.ui.UpdateInfo"
+		        	android:id="@+id/update_info_fragment"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" />
+			</SlidingDrawer>
+		</RelativeLayout>
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:id="@+id/container_install">
+		    
+			<fragment class="org.arasthel.yaos.ui.InstallList"
+		        	android:id="@+id/install_list_fragment"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_marginBottom="30dip" />
+			<SlidingDrawer 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:handle="@+id/handle_install"
+			    android:content="@+id/install_info_fragment">
+				<TextView android:id="@+id/handle_install"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/more_info"
+				    android:gravity="center"
+				    android:padding="10dip"
+				    android:background="@android:drawable/title_bar" />			    
+			    <fragment class="org.arasthel.yaos.ui.InstallInfo"
+		        	android:id="@+id/install_info_fragment"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" />
+			</SlidingDrawer>
+		</RelativeLayout>
+	</ViewSwitcher>
+</FrameLayout>

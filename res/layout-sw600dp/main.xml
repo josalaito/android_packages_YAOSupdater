@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<ViewSwitcher 
+		    android:id="@+id/switcher"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    >
+		
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal"
+		    android:padding="10dip"
+		    android:id="@+id/container" 
+		    >
+		    
+			<fragment class="org.arasthel.yaos.ui.Lista"
+		        	android:id="@+id/update_list_fragment"
+		        	android:layout_weight="2.5"
+		            android:layout_width="fill_parent"
+		            android:layout_height="match_parent" />
+			
+			<fragment class="org.arasthel.yaos.ui.UpdateInfo"
+		        	android:id="@+id/update_info_fragment"
+		        	android:layout_weight="1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="match_parent" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal"
+		    android:padding="10dip"
+		    android:id="@+id/container_install" >
+		    
+			<fragment class="org.arasthel.yaos.ui.InstallList"
+		        	android:id="@+id/install_list_fragment"
+		        	android:layout_weight="2.5"
+		            android:layout_width="fill_parent"
+		            android:layout_height="match_parent" />
+			
+			<fragment class="org.arasthel.yaos.ui.InstallInfo"
+		        	android:id="@+id/install_info_fragment"
+		        	android:layout_weight="1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="match_parent" />
+		</LinearLayout>
+	</ViewSwitcher>
+</FrameLayout>

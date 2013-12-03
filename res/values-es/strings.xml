@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YAOS Updater</string>
+    <string name="info_label">Información</string>
+    <string name="welcome">Bienvenido a YAOS Updater. Para empezar, debe pulsar "Actualizar", así conseguirá la lista de actualizaciones. Después, debe seleccionar una de las opciones del panel de la izquierda, descargarla, y una vez descargada, ir a "Instalar" y aplicar la actualización.</string>
+    <string name="more_info">Más información</string>
+    <string name="desc_name">Nombre: </string>
+    <string name="desc_version">Version: </string>
+    <string name="desc_max_version">Version máxima: </string>
+    <string name="desc_file">Nombre del archivo: </string>
+    <string name="desc_desc">Descripción: </string>
+    <string name="rom_to_install">ROM a instalar:</string>
+    <string name="patch_to_install">Parche:</string>
+    <string name="gapps_to_install">Google Apps:</string>
+    <string name="others_to_install">Otros:</string>
+    <string name="other_options">Otras opciones:</string>
+    <string name="do_wipe">Hacer wipe (borrar datos)</string>
+    <string name="do_backup">Hacer copia de seguridad</string>
+    <string name="backup_name">Nombre del backup</string>
+    <string name="updates">Actualizaciones</string>
+    <string name="patches">Parches</string>
+    <string name="others">Otros</string>
+    <string name="install">Instalar</string>
+    <string name="downloading">Descargando: </string>
+    <string name="zero_percent">0%</string>
+    <string name="already_downloading">Ya se está descargando una actualización. Espere a que esta acabe para descargar otra.</string>
+    <string name="found_files">Archivos encontrados:</string>
+    <string name="add_as">Añadir como:</string>
+    <string name="add">Añadir</string>
+    <string name="add_to_install_plot">Añadir al guión de instalación</string>
+    <string name="nothing">Nada</string>
+    <string name="clear">Quitar</string>
+	<string name="delete">Eliminar</string>
+    <string name="update">ROM</string>
+    <string name="patch">Parche</string>
+	<string name="other">Otro</string>
+	<string name="delete_instructions">Elija los elementos a eliminar y pulse de nuevo en \"Eliminar\". Si desea cancelar, no seleccione nada y púlselo igualmente.</string>
+	<string name="delete_message">Archivos eliminados</string>
+	<string name="accept">Aceptar</string>
+	<string name="current_folder">Carpeta seleccionada: </string>
+	<string name="create_folder">Crear carpeta</string>
+	<string name="create">Crear</string>
+	<string name="cling_continue">Continuar</string>
+</resources>

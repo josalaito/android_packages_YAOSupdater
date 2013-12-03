@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types">
+        <item>ROM</item>
+        <item>Patch</item>
+        <item>Google Apps</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="interals">
+        <item>Every 15 minutes</item>
+        <item>Every 30 minutes</item>
+        <item>Every hour</item>
+        <item>Every day</item>
+    </string-array>
+    <string-array name="intervals_values">
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>86400000</item>
+    </string-array>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000" >
+
+    <TextView
+        android:id="@+id/infoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_label"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+		<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:weightSum="1"
+		    android:orientation="horizontal"
+		    android:padding="20dip">
+			<ListView
+	            android:id="@+id/to_install_items_list"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.3" 
+	            android:paddingLeft="10dip">
+	        </ListView>
+	        <LinearLayout 
+					   android:orientation="vertical"
+					   android:layout_weight="0.7"
+					   android:layout_width="fill_parent"
+					   android:layout_height="fill_parent">
+						        
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="@string/other_options"
+				            android:textAppearance="?android:attr/textAppearanceLarge" />
+					     <CheckBox
+					        android:id="@+id/doWipe"
+				            android:layout_width="wrap_content"
+				            android:layout_marginTop="15dip"
+				            android:layout_marginBottom="10dip"
+				            android:layout_height="wrap_content"
+				            android:text="@string/do_wipe" />
+					     <CheckBox
+					        android:id="@+id/doBackup"
+				            android:layout_width="wrap_content"
+				            android:layout_marginBottom="15dip"
+				            android:layout_height="wrap_content"
+				            android:text="@string/do_backup" />
+	
+					     <EditText
+					         android:id="@+id/backupName"
+					         android:layout_width="match_parent"
+					         android:layout_height="wrap_content"
+					         android:enabled="false"
+					         android:hint="@string/backup_name" >
+					     </EditText>
+					     
+					</LinearLayout>
+			</LinearLayout>
+</LinearLayout>

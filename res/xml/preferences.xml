@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="General">
+        <SwitchPreference android:key="cwm5" android:title="Compatibilidad con ClockworkMod 5" android:summary="Algunas versiones del recovery CWM5 necesitan de esta opción activada. Si YAOS no instala nada desde el recovery, cambia esta opción"/>
+	    <org.arasthel.yaos.ui.SelectDirDialog android:key="selectDir" android:title="Cambiar carpeta de descarga de archivos" />
+	    <SwitchPreference android:key="searchOnInit" android:title="Buscar actualizaciones al iniciar" android:summaryOn="Se buscarán actualizaciones al iniciar el programa" android:summaryOff="No se buscarán actualizaciones al iniciar"/>
+	    <SwitchPreference android:summaryOff="Buscando todas las ROMs" android:key="only_stables" android:title="Buscar solo ROM estables" android:summaryOn="Buscando ROMs estables"/>
+	    <SwitchPreference android:summaryOff="Se muestran solo las versiones superiores" android:key="any_version" android:title="Mostrar todas las versiones" android:summaryOn="Se muestran todas las versiones"/>
+	    <SwitchPreference android:title="Restaurar último guión de instalación" android:summaryOn="Se restaurarán los últimos paquetes instalados" android:key="restoreLast" android:summaryOff="No se restaurarán los últimos paquetes instalados"/>
+	</PreferenceCategory>
+    <PreferenceCategory android:title="Buscar actualizaciones automáticamente">
+        <SwitchPreference android:title="Buscar actualizaciones todos los días" android:summaryOn="Se buscarán actualizaciones diariamente a la hora elegida" android:summaryOff="No se buscarán actualizaciones automáticamente" android:key="autoUpdate"/>
+        <ListPreference android:title="Intervalo entre búsquedas" android:summary="Cada cuánto tiempo se buscarán actualizaciones" android:key="updateInterval" android:entries="@array/interals" android:entryValues="@array/intervals_values" android:defaultValue="86400000" android:dependency="autoUpdate"/>
+        <org.arasthel.yaos.ui.TimePickerDialog android:key="hourtoSearch" android:title="Hora a la que buscar actualizaciones" android:summary="Seleccione una hora para buscar actualizaciones todos los días" android:dependency="autoUpdate" />    
+    </PreferenceCategory>
+	<PreferenceCategory android:title="Sobre la aplicación y el autor">
+	    <Preference android:title="Autor: Arasthel" android:summary="Más datos" android:key="aboutme"/>
+	    <Preference android:title="¿Quieres agradecerme esta aplicación?" android:summary="Pulsa aquí para hacer una donación" android:key="donate"/>
+	</PreferenceCategory>    
+
+</PreferenceScreen>
